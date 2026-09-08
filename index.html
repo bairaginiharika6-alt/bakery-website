@@ -190,12 +190,20 @@ section{padding:90px 0}
   visibility:visible;
 }
 .card-icon{
-  height:160px;border-radius:18px;margin-bottom:18px;display:grid;place-items:center;
-  background:linear-gradient(135deg,#f7e6bd,#eab0b8,#b8c79b);
-  font-size:58px
+  height:160px;
+  border-radius:18px;
+  margin-bottom:18px;
+  overflow:hidden;
+  background:#f7e6bd;
 }
-.card h4{font-size:24px;color:var(--brown);margin-bottom:6px}
-.card p{color:#705b50;font-size:15px}
+
+.card-icon img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:18px;
+  display:block;
+}
 .price{margin-top:13px;color:var(--saffron);font:800 15px Arial,sans-serif}
 
 /* Special */
@@ -376,8 +384,7 @@ section{padding:90px 0}
 <article class="card">
   <div class="card-icon">
     <img src="cheesecake.jpg"
-         alt="Homemade Cheesecake"
-         style="width:100%; height:160px; object-fit:cover; border-radius:18px; display:block;">
+         alt="Homemade Cheesecake">
   </div>
 
   <h4>Homemade Cheesecake</h4>
